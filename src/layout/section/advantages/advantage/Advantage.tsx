@@ -24,13 +24,15 @@ export const Advantage = (props: AdvantagePropsType) => {
 };
 
 const StyledAdvantage = styled.div`
-
 `
 
 const AdvantageTitle = styled.h3`
-    
+  margin: 30px 0 25px;
+  text-transform: capitalize;
+  font-size: 30px;
 `
 
 const AdvantageText = styled.p`
   color: ${theme.colors.fontPrimary};
+  line-height: 1.5;
 `

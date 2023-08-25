@@ -22,10 +22,13 @@ export const Advantages = () => {
 
 const StyledAdvantages = styled.section`
   color: #2C2A2F;
+  margin-bottom: 170px;
+  
 `
 
 const WrapperAdvantages = styled.div`
-
+  display: flex;
+  gap: 55px;
 `
 
 const Title = styled.h2`
