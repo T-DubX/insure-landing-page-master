@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: ${theme.colors.font};
+    color: ${theme.colors.fontPrimary};
   }
   
   h1,
@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: ${theme.colors.font};
+    color: ${theme.colors.fontPrimary};
     cursor: pointer;
   }
 
@@ -41,6 +41,6 @@ export const GlobalStyle = createGlobalStyle`
     background-color: unset;
     border: unset;
     cursor: pointer;
-    color: ${theme.colors.font};
+    color: ${theme.colors.fontPrimary};
   }
 `

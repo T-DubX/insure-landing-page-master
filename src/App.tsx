@@ -1,11 +1,11 @@
 import styled from 'styled-components';
+import {Header} from "./layout/header/Header";
 
 
 function App() {
     return (
         <div className="App">
-            <h1>heklow worlsd</h1>
-            <p>asfasfasdfsfdb</p>
+            <Header/>
         </div>
     );
 }
