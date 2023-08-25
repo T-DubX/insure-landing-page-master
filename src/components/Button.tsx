@@ -5,7 +5,7 @@ type ButtonPropsType = {
     color: string
 }
 export const Button = styled.button<ButtonPropsType>`
-  padding: .5rem 1.5rem;
+  padding: .6rem 1.5rem;
   text-transform: uppercase;
   color: ${props => props.color || theme.colors.fontDarkBg};
   border: 2px solid ${props => props.color || theme.colors.fontDarkBg};

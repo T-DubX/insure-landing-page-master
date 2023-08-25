@@ -23,7 +23,6 @@ export const Menu = (props: MenuPropsType) => {
 };
 
 const StyledMenu = styled.nav`
-
 `
 
 const MenuList = styled.ul`

@@ -24,6 +24,12 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   padding: .6rem 0;
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 5;
   
   ${Container} {
     display: flex;
