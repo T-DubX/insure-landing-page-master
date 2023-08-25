@@ -10,4 +10,5 @@ export const Button = styled.button<ButtonPropsType>`
   color: ${props => props.color || theme.colors.fontDarkBg};
   border: 2px solid ${props => props.color || theme.colors.fontDarkBg};
   font-weight: 700;
+  letter-spacing: 1.2px;
 `

@@ -23,5 +23,23 @@ export const Header = () => {
 
 
 const StyledHeader = styled.header`
-
+  padding: .6rem 0;
+  
+  ${Container} {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    a {
+      margin-right: auto;
+    }
+    
+    ${Button}:hover {
+      background-color: ${theme.colors.hover};
+      color: ${theme.colors.fontDarkBg};
+    }
+  }
+  
+  
+  
 `
