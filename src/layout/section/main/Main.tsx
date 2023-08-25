@@ -36,6 +36,7 @@ const StyledMain = styled.section`
   background-color: ${theme.colors.primary};
   position: relative;
   padding-top: 57px;
+  margin-bottom: 350px;
   
   svg:first-child{
     position: absolute;

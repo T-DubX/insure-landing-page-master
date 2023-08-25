@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
   h3,
   h4 {
     font-family: 'DM Serif Display', serif;
+    font-weight: 400;
   }
 
   a {
