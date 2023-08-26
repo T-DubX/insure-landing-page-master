@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme";
 
 type FooterMenuPropsType = {
     title: string
@@ -26,21 +27,35 @@ export const FooterMenu = (props: FooterMenuPropsType) => {
 };
 
 const StyledFooterMenu = styled.nav`
-  
+  z-index: 1;
+  & + & {
+    margin-left: 250px;
+  }
 `
 
 const Title = styled.h4`
-  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
 `
 
 const MenuList = styled.ul`
-
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `
 
 const MenuItem = styled.li`
-
+  
 `
 
 const Link = styled.a`
+  font-size: 14px;
+  text-transform: uppercase;
+  color: ${theme.colors.fontSecondary};
+  font-weight: bold;
   
+  &:hover {
+    text-decoration: underline;
+  }
 `

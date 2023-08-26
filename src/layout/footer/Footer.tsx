@@ -19,13 +19,14 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper>
+                <Icon className={'bg'}  iconId={'bg-footer-desktop'} width={'528'} height={'231'}/>
+                <FlexWrapper justify={'space-between'} align={'center'}>
                     <LogoWrapper>
                         <Logo/>
                     </LogoWrapper>
                     <Social>
                         <Icon iconId={'facebook'} width={'24'} height={'24'}/>
-                        <Icon iconId={'twitter'} width={'24'} height={'24'}/>
+                        <Icon iconId={'twitter'} width={'24'} height={'20'}/>
                         <Icon iconId={'pinterest'} width={'24'} height={'24'}/>
                         <Icon iconId={'instagram'} width={'24'} height={'24'}/>
                     </Social>
@@ -46,18 +47,38 @@ const StyledFooter = styled.footer`
   background-color: #FAFAFA;
   
   ${Container} {
-    padding: 0;
+    padding: 60px 0;
+    position: relative;
+    
+    .bg {
+      position: absolute;
+      top: 0;
+      left: -11%;
+    }
   }
 `
 
 const LogoWrapper = styled.div`
-
+  z-index: 1;
 `
 
 const Splitter = styled.div`
-
+  height: 1px;
+  background-color: #c5c5c5;
+  margin: 35px 0 50px;
 `
 
 const Social = styled.div`
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  svg {
+    cursor: pointer;
+    fill: #837D88;
+  }
+  
+  & svg:hover {
+    fill: #000;
+  }
 `
